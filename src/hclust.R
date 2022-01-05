@@ -6,7 +6,9 @@
 
 library(methods)
 
-Hclust <- setRefClass('Hclust', fields = list(data = 'data.frame'))
+Hclust <- setRefClass('Hclust', 
+                      contains = 'Algorithm', 
+                      fields = list(data = 'Data'))
 
 Hclust$methods(
   preprocess = function() {

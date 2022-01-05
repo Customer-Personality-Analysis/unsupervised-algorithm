@@ -3,12 +3,12 @@
 # Propósito: Clase para gestionar los algoritmos no supervisados
 # ==============================================================================
 
-
 library(methods)
+source(file='algorithm.R')
 source(file='kmeans.R')
 source(file='hclust.R')
 
-Unsupervised <- setRefClass('unsupervised', fields = list(data = 'data.frame'))
+Unsupervised <- setRefClass('unsupervised', fields = list(data = 'Data'))
 
 Unsupervised$methods(
   getAlgorithm = function(name) {
