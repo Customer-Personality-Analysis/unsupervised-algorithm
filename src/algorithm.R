@@ -17,6 +17,11 @@ Algorithm$methods(
   preprocess = function() {
     'Preprocesar la data en caso de ser necesario'
     
+    # Creación de nuevas columnas
+    columnsToSum <- c('MntWines', 'MntFruits', 'MntMeatProducts', 
+                 'MntFishProducts', 'MntSweetProducts', 'MntGoldProds')
+    data$TotalSpend <<- rowSums(data[,columnsToSum])
+    
     # Reemplazar los datos únicos demasiado alejados de la media
     data$Income[data$Income == 666666] <<- 51621
     data$Year_Birth[data$Year_Birth < 1920] <<- 1950

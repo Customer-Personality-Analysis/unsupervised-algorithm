@@ -24,7 +24,7 @@ data$visualize()
 
 # Ejecución de algoritmos no supervisados
 unsupervised <- Unsupervised(data = data$getRawData())
-algorithms <- c('kmeans')
+algorithms <- c('kmeans', 'hclust')
 
 for (i in 1:length(algorithms)) { 
   algorithm <- unsupervised$getAlgorithm(algorithms[i])

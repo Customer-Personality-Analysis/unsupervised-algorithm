@@ -57,19 +57,54 @@ Kmeans$methods(
         size = 1
       ) + scale_x_continuous(n.breaks = 15)
     
+    # Visualizar la distribución del total de gastos en base al cluster
+    clusterTotalSpend <- ggplot(data, aes(TotalSpend)) +
+      geom_histogram(bins = 30, fill = 'cadetblue2', color = 'blue') +
+      facet_wrap(vars(cluster)) +
+      geom_vline(
+        aes(xintercept = mean(TotalSpend)),
+        color = 'red',
+        linetype = "dashed",
+        size = 1
+      ) + scale_x_continuous(n.breaks = 15)
+    
+    # Visualizar la distribución del gasto en vinos en base al cluster
+    clusterWinesSpend <- ggplot(data, aes(MntWines)) +
+      geom_histogram(bins = 30, fill = 'cadetblue2', color = 'blue') +
+      facet_wrap(vars(cluster)) +
+      geom_vline(
+        aes(xintercept = mean(MntWines)),
+        color = 'red',
+        linetype = "dashed",
+        size = 1
+      ) + scale_x_continuous(n.breaks = 15)
+    
+    # Visualizar la distribución de compras onlines en base al cluster
+    clusterOnlinePurchase <- ggplot(data, aes(NumWebPurchases)) +
+      geom_histogram(bins = 30, fill = 'cadetblue2', color = 'blue') +
+      facet_wrap(vars(cluster)) +
+      geom_vline(
+        aes(xintercept = mean(NumWebPurchases)),
+        color = 'red',
+        linetype = "dashed",
+        size = 1
+      ) + scale_x_continuous(n.breaks = 15)
+    
     # Visualizar el resultado de aplicar kmeans
     clustersAmount <- .self$getElbowMethod()
     kmeansPlot <- fviz_cluster(kmeans(scaleData, centers = clustersAmount),
                    geom = 'point',
                    data = scaleData)
     
+    grid.arrange(wssPlot, silhouette, ncol = 1, nrow = 2)
     grid.arrange(
-      wssPlot,
-      silhouette, 
       clusterIncome, 
-      kmeansPlot, 
+      clusterTotalSpend,
+      clusterWinesSpend,
+      clusterOnlinePurchase,
       ncol = 1, 
       nrow = 4
-      )
+    )
+    grid.arrange(kmeansPlot, ncol = 1, nrow = 1)
   }
 )
