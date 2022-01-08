@@ -34,8 +34,6 @@ Algorithm$methods(
         'Dt_Customer',
         'AcceptedCmp1',
         'AcceptedCmp2',
-        'AcceptedCmp1',
-        'AcceptedCmp2',
         'AcceptedCmp3',
         'AcceptedCmp4',
         'AcceptedCmp5',

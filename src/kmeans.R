@@ -4,6 +4,8 @@
 # ==============================================================================
 
 
+if (!require('dplyr')) install.packages('dplyr')
+library(dplyr)
 library(methods)
 
 Kmeans <- setRefClass('Kmeans',
@@ -34,7 +36,7 @@ Kmeans$methods(
     data$cluster <<- kmeanResult$cluster
     
     # Contar el número de clientes en cada cluster
-    count(data, cluster)
+    print(count(data, cluster))
   },
   
   visualize = function() {

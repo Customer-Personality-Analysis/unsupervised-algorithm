@@ -5,7 +5,8 @@
 
 
 library(methods)
-require(gridExtra)
+library(gridExtra)
+library(lubridate)
 
 Data <- setRefClass('Data', fields = list(data = 'data.frame'))
 
