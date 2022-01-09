@@ -1,5 +1,7 @@
 # Unsupervised Algorithm
 [![es](https://img.shields.io/badge/lang-es-yellow.svg)](/README.md)
+### Project style guide
+[Click here](https://google.github.io/styleguide/Rguide.html)
 ## Customer Personality Analisys
 ### Description
 Customer Personality Analysis is a detailed analysis of a company’s ideal customers. It helps a business to better understand its customers and makes it easier for them to modify products according to the specific needs, behaviors and concerns of different types of customers.
@@ -12,8 +14,7 @@ It is necessary to know the purchasing power of each client and who are the ones
 ### Algorithm
 Algorithms use in this project are:
 
-    - Multiple Lineal Regression [lm]
-    - Knn
-    - cv
+    - K-means clustering (kmeans)
+    - Hierarchical Clustering (hclust)
 
 #### Context References in [Kaggle](https://www.kaggle.com/imakash3011customer-personality-analysis)
