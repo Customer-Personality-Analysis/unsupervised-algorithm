@@ -11,7 +11,7 @@ Customer personality analysis helps a business to modify its product based on it
 ### Exercise
 It is necessary to know the purchasing power of each client and who are the ones who spend the most on wines in such a way that the wine advertising campaign can be segmented and focused exclusively on these clients.
 
-### Algorithm
+### Algorithms
 Algorithms use in this project are:
 
     - K-means clustering (kmeans)
