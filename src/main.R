@@ -19,7 +19,7 @@ setwd(dir)
 data <- Data(data = marketing_data)
 
 data$explore()
-data$clean(removeNA = FALSE)
+data$clean(remove_na = FALSE)
 data$visualize()
 
 # Ejecución de algoritmos no supervisados
