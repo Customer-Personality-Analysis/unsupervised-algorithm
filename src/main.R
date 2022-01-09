@@ -3,7 +3,6 @@
 # Propósito: Punto de entrada para aplicar los algoritmos no supervisados
 # ==============================================================================
 
-
 # Carga de datos y configuración de ambiente
 set.seed(1234)
 dir <- getwd()
