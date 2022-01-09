@@ -1,11 +1,8 @@
 # Algoritmos No Supervisado
 [![es](https://img.shields.io/badge/lang-es-yellow.svg)](/README.md)
 [![en](https://img.shields.io/badge/lang-en-red.svg)](/README.en.md)
-
-> Aplicacion de diferentes algoritmos no supervisados a un conjunto de datos
-
 ### Guía de estilo del proyecto
-https://google.github.io/styleguide/Rguide.html
+[Pulsa aquí](https://google.github.io/styleguide/Rguide.html)
 
 ## Análisis de la personalidad del cliente
 ### Descripción
@@ -21,11 +18,10 @@ debe ser el root del proyecto.
 ### Ejercicio
 Se necesita conocer el poder adquisitivo de cada cliente y quienes son los que más gastos realizan en vinos de forma tal que se puedan segmentar y enfocar la campaña publicitaria de vinos exclusivamente a estos clientes.
 
-### Algoritmo
+### Algoritmos
 Los algoritmos utilizado en este proyecto son:
 
-    - Regresión Lineal Múltiple [rlm]
-    - Knn
-    - cv
+    - Agrupación de K-means (kmeans)
+    - Agrupación jerárquica (hclust)
 
 #### Referencia del ejercicio en la plataforma de [Kaggle](https://www.kaggle.com/imakash3011customer-personality-analysis)
