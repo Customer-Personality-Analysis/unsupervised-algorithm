@@ -13,10 +13,13 @@ El análisis de la personalidad del cliente es un análisis detallado de los cli
 
 El análisis de la personalidad del cliente ayuda a una empresa a modificar su producto en función de sus clientes objetivo de diferentes tipos de segmentos de clientes. Por ejemplo, en lugar de gastar dinero para comercializar un nuevo producto para cada cliente en la base de datos de la empresa, una empresa puede analizar qué segmento de clientes es más probable que compre el producto y luego comercializar el producto solo en ese segmento en particular.
 
-### ¿Cómo ejectuar?
+### ¿Cómo ejectuar el proyecto?
 Abrir el proyecto en RStudio (unsupervised-algorithm.Rproj) y 
 hacer source al script src/main.R. El working directory por defecto
 debe ser el root del proyecto.
+
+### Ejercicio
+Se necesita conocer el poder adquisitivo de cada cliente y quienes son los que más gastos realizan en vinos de forma tal que se puedan segmentar y enfocar la campaña publicitaria de vinos exclusivamente a estos clientes.
 
 ### Algoritmo
 Los algoritmos utilizado en este proyecto son:
